@@ -44,10 +44,8 @@ app.get('/api/persons', (request, response) => {
 })
 
 app.get('/info', (request, response) => {
-  const date = new Date()
-  const formattedDate = date.toLocaleString()
-
-  response.send(`<p>Phonebook has info for ${persons.length} people</p><p>${formattedDate}</p>`)
+    const date = new Date()
+  response.send(`<p>Phonebook has info for ${persons.length} people</p><p>${date}</p>`)
 })
 
 
